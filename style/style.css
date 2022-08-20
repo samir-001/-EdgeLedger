@@ -1,0 +1,271 @@
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    scroll-behavior: smooth;
+    
+
+}
+body{
+ 
+    overflow: hidden;
+    overflow-y: scroll;
+}
+nav{
+    position: fixed;
+    width: 100%;
+    top: 0;
+    display: flex;
+    background-color: #333;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 1rem;
+   
+    
+}
+.primary-color{
+    color:#93cb52;
+}
+nav .logo{
+    color:aliceblue;
+    font-size: 1.25rem;
+}
+nav ul {
+
+    display: flex;
+}
+
+nav ul li{
+   
+    list-style: none;
+}
+nav ul li a {
+    display: inline-block;
+    padding: .75rem;
+    margin:.25rem;
+    text-decoration: none;
+    color: white;
+
+}
+nav ul li a:hover{
+    color: white;
+    background-color:#93cb52 ;
+    border-radius: .3rem;
+}
+
+header{
+    font-size: 1.25rem;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    height: 95vh;
+    justify-content: center;
+    align-items: center;
+    background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/showcase.jpg") no-repeat center center/cover;
+   
+}
+header .lead{
+    margin: 2rem;
+    text-align: center;
+}
+.read-more{
+    color: white;
+    text-decoration: none;
+    background-color:#93cb52;
+    padding:.75rem 1rem;
+    border-radius: .5rem;
+    font-size: 1.15rem;;
+}
+#What{
+    text-align: center;
+    margin: 1rem;
+}
+#What-boxes{
+    display: flex;
+    align-items: center;
+    justify-content:center
+}
+#What-boxes .box{
+    width:20rem;
+    padding: .75rem;
+    display: flex;
+
+    flex-direction: column;
+    align-items:center ;
+    font-size:1.25rem
+  
+
+}
+#What-boxes h3{
+    margin: 1rem;
+}
+#What p{
+    width:14rem;
+    text-align: center;
+
+}
+#Who{
+display: flex;   
+    
+}
+#What div div i{
+    color: white;
+    background-color: #93cb52;
+    font-size: 2rem;
+    border-radius: 50%;
+    padding: 1rem;
+}
+.Who-image{
+    flex:1;
+    background: url("../image/people.jpg") no-repeat center center/cover;
+}
+#Who-content{
+
+    flex:1;
+    display: flex;
+    flex-direction: column;
+    padding: 1rem;
+    background-color: #333;
+    color: white;
+}
+#Who-content h1{
+    margin-bottom: 1rem;
+
+    
+}
+#Who-content p {
+    font-size:  1.1rem;
+    width:80%
+}
+.team-info{
+    padding: 1rem 0 0 0;
+
+}
+.team-info h3{
+    margin-bottom: 1rem;
+}
+.team-info p {
+    width:80%
+}
+.team-info ul{
+ list-style: none;
+}
+.team-info ul li {
+    margin: 1rem 0;
+    padding: .3rem ;
+    border-bottom: #444 dotted 1px;
+}
+#clients{
+    text-align: center;
+}
+#clients h1{
+    margin-top:1rem;
+}
+.clients-logo{
+    display: flex;
+    padding:1.5rem 3rem;
+    justify-content: center;
+
+}
+.client{
+    margin:0 2rem;
+    flex:1;
+    max-width:  7rem;
+    max-height: 7rem;
+    min-width:  7rem;
+    min-height: 7rem;
+}
+.client1{
+    background: url("../image/logos/logo1.png") no-repeat center center/cover;
+}
+.client2{
+    background: url("../image/logos/logo2.png") no-repeat center center/cover;
+}
+.client3{
+    background: url("../image/logos/logo3.png") no-repeat center center/cover;
+}
+.client4{
+    background: url("../image/logos/logo4.png") no-repeat center center/cover;
+}
+.client5{
+    background: url("../image/logos/logo5.png") no-repeat center center/cover;
+}
+#Contact{
+    display: flex;
+}
+
+.map{
+    flex: 6;
+ background: url("../image/map.jpg") no-repeat center center/cover;
+}
+.contact-info{
+    flex:4;
+    padding: 0 2rem;
+    color: white;
+    background-color: #93cb52;
+}
+.contact-info h1{
+    margin: 1rem 0 0 0;
+}
+.contact-info p {
+    font-size: 1.2rem;
+}
+.input-group{
+    display: flex;
+    flex-direction: column;
+}
+label{
+    text-transform: capitalize;
+    font-size: 1.1rem;
+    padding: .5rem 0;
+}
+input ,textarea{
+    line-height:1.5rem ;
+}
+button{
+    color: white;
+    background-color: #333;
+    margin: 1rem 0;
+    padding: .75rem 1rem;
+    border: 0;
+    border-radius: .3rem;
+}
+footer{
+    text-align: center;
+    font-size: 1.2rem;
+    padding: 1.5rem;
+    color: white;
+    background-color: #333;
+}
+@media(max-width:600px){
+    nav{
+        padding-top: .5rem;
+        flex-direction: column;
+    }
+    #What-boxes{
+        flex-direction: column;
+    }
+    #Who{
+        flex-direction: column;
+    }
+    .clients-logo{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+    #Contact{
+        flex-direction: column;
+    }
+    .Who-image{
+        flex: none;
+        width: 100%;
+        height: 300px;
+   
+    }
+    .map{
+        width: 100%;
+        height: 300px;
+        flex: none;
+    }
+}
