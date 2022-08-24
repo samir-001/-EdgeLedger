@@ -65,6 +65,9 @@ header{
     background:linear-gradient(0deg, rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.4)), url("../image/showcase.jpg") no-repeat center center/cover;
    
 }
+header h1{
+    text-align:center
+}
 header .lead{
     margin: 2rem;
     text-align: center;
