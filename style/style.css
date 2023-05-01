@@ -161,18 +161,20 @@ display: flex;
 }
 #clients{
     text-align: center;
+   
 }
 #clients h1{
     margin-top:1rem;
 }
-.clients-logo{
+.clients-logos{
+
     display: flex;
     padding:1.5rem 3rem;
     justify-content: center;
 
 }
 .client{
-    margin:0 2rem;
+    margin-left: 20px;
     flex:1;
     max-width:  7rem;
     max-height: 7rem;
@@ -181,6 +183,7 @@ display: flex;
 }
 .client1{
     background: url("../image/logos/logo1.png") no-repeat center center/cover;
+
 }
 .client2{
     background: url("../image/logos/logo2.png") no-repeat center center/cover;
@@ -252,11 +255,15 @@ footer{
     #Who{
         flex-direction: column;
     }
-    .clients-logo{
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
+    .clients-logos{
+        flex-direction: row;
+        overflow-x: scroll;
     }
+    .client1{
+      
+        margin-left: 250px;
+    }
+  
     #Contact{
         flex-direction: column;
     }
